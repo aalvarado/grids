@@ -14,7 +14,7 @@ $ ->
 
   $('#grids').on click: ->
     $(this).toggleClass 'clicked'
-    console.log find_col(this)
+    $('#coords').val find_col(this)
   , '.cell'
 
 find_col = (cell) ->
