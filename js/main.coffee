@@ -14,8 +14,23 @@ $ ->
 
   $('#grids').on click: ->
     $(this).toggleClass 'clicked'
+    console.log find_col(this)
   , '.cell'
 
+find_col = (cell) ->
+  row = $(cell).parent('.row')
+  map = row.parent('#grids')
+
+  for child, i in row.children()
+    if child == cell
+      x = i
+      break
+
+  for child, i in map.children('')
+    if child == row[0]
+      y = i
+      break
+
+  return [y,x]
+
 grid_size = () -> 10
-
-
