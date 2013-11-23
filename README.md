@@ -1,7 +1,7 @@
-grids
+Grids
 =====
 
-simple js grid experiment
+Simple js grid experiment in Coffeescript
 
 http://aalvarado.github.io/grids
 
